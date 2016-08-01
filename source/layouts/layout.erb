@@ -1,3 +1,5 @@
+<!-- ECOOOOO LAYOUT FOR EVERY PAGE. ARADAKI BAGLAYICI GIBI DUSUN.
+Sonra ise PARTIALS cok onemli. !!! -->
 <!doctype html>
 <html>
   <head>
@@ -28,6 +30,9 @@
 
     <%= partial "navbar" %>
     <%= yield %>
-
+    <%= partial "footer" %>
+    <!-- Footer a yield ediyor, navbar'dan structure bu yuzden boyle.
+    So essentially a TEMPLATE FOR EVERY PAGE. Done it once, so will work in all files.
+    ALSO, good way to separate concerns; can disable the partial and can work by feature. -->
   </body>
 </html>
